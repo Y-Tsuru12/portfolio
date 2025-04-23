@@ -1,220 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tsuru's portfolio</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
-  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" /> 
-
-
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/works.css" media="all" rel="stylesheet" type="text/css">
+  <link href="css/profile.css" media="all" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Yusei+Magic&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer type='text/javascript' src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/4dbc92b9fb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="wrapper">
 
     <!-- header -->
-    <header class="header ">
+    <header class="header">
       <div class="container">
         <h1 class="header-logo">
           <a href="#">Tsuru's portfolio</a>
         </h1>
-        <nav class="gnav">
-          <ul class="gnav-list">
-            <li class="gnav-item"><a href="#works">WORKS</a></li>
-            <li class="gnav-item"><a href="#skill">SKILL</a></li>
-            <li class="gnav-item"><a href="#about">ABOUT</a></li>
-            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
+        <div class="nav">
+          <!-- PC用ナビゲーション -->
+          <nav class="nav-pc">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#works">works</a></li>
+              <li class="nav-item"><a href="#skills">skills</a></li>
+              <li class="nav-item"><a href="#about">about</a></li>
+              <li class="nav-item"><a href="#contact">contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- PC用言語切り替え -->
+          <div class="lang-switcher lang-switcher-pc">
+            <button id="lang-ja">japanese</button>
+            <button id="lang-en">english</button>
+          </div>
+          
+          <!-- ハンバーガーメニュー -->
+          <div class="hamburger" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+          
+        <!-- SP用ナビゲーション -->
+        <nav class="nav-sp" id="js-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">home</a></li>
+            <li class="nav-item"><a href="#works">works</a></li>
+            <li class="nav-item"><a href="#skills">skills</a></li>
+            <li class="nav-item"><a href="#about">about</a></li>
+            <li class="nav-item"><a href="#contact">contact</a></li>
           </ul>
+
+          <!-- SP用言語切り替え -->
+          <div class="lang-switcher lang-switcher-sp">
+            <button id="lang-ja-sp">japanese</button>
+            <button id="lang-en-sp">english</button>
+          </div>
         </nav>
       </div>
     </header>
     <!-- /header -->
-
+    
     <main class="content">
-
-      <!-- mv -->
+      
+      <!-- main visual -->
       <div class="mv">
         <div class="mv-container">
-          <img src="img/main-img.png" alt="">
+          <img id="mv-lang" src="img/main-img.png" alt="サイト紹介メインビジュアル、デザインとコーディングの作品を集めました。シンプルなもの、派手なものどんなものでも作っていきたい。あなたの作りたいものも一緒に形にしてみませんか？" width="1366" height="768">
         </div>
       </div>
-      <!-- /mv -->
-
+      <!-- /main visual -->
+      
       <!-- works -->
       <section class="works section" id="works">
         <div class="container">
-          <h2 class="title">WORKS</h2>
+          <h2 class="title">works</h2>
           <div class="works-list">
             <!-- コーポレートサイト -->
             <a class="works-item" href="works-1.html">
-              <div class="works-img"><img src="img/works/html1.png" alt="html1" /></div>
-              <p class="works-name">コーポレートサイト</p>
-              <p class="works-info">HTML/CSS/JavaScript/jQuery/レスポンシブ対応</p>
+              <div class="works-img">
+                <img src="img/works/html1.png" alt="作品1。コーポレートサイト。" width="400" height="300">
+              </div>
+              <p class="works-name" data-ja="コーポレートサイト" data-en="corporate website">コーポレートサイト</p>
+              <p class="works-info" data-ja="HTML/CSS/JavaScript/jQuery/レスポンシブ対応" data-en="HTML/CSS/JavaScript/jQuery/Responsive design">HTML/CSS/JavaScript/jQuery/レスポンシブ対応</p>
             </a>
             
             <!-- プロフィールサイト -->
             <a class="works-item" href="works-2.html">
-              <div class="works-img"><img src="img/works/html2.png" alt="html2" /></div>
-              <p class="works-name">プロフィールサイト</p>
+              <div class="works-img">
+                <img src="img/works/html2.png" alt="作品2。" width="400" height="300">
+              </div>
+              <p class="works-name" data-ja="プロフィールサイト" data-en="personal profile website">プロフィールサイト</p>
               <p class="works-info">HTML/CSS</p>
             </a>
             
             <!-- 美容室のHP（WordPress） -->
             <a class="works-item" href="works-3.html">
-              <div class="works-img"><img src="img/works/wordpress1.png" alt="WordPress" /></div>
-              <p class="works-name">美容室のHP</p>
+              <div class="works-img">
+                <img src="img/works/wordpress1.png" alt="作品3。美容室のホームページ。" width="400" height="300">
+              </div>
+              <p class="works-name" data-ja="美容室のホームページ" data-en="hair salon website">美容室のホームページ</p>
               <p class="works-info">WordPress</p>
             </a>
             
             <!-- ITスクールのバナー -->
             <a class="works-item" href="works-4.html">
-              <div class="works-img"><img src="img/works/photoshop.png" alt="Photoshop" /></div>
-              <p class="works-name">ITスクールのバナー</p>
+              <div class="works-img">
+                <img src="img/works/photoshop.png" alt="作品4。ITスクールのバナー。" width="400" height="300">
+              </div>
+              <p class="works-name" data-ja="ITスクールのバナー" data-en="banner for an IT school">ITスクールのバナー</p>
               <p class="works-info">Photoshop</p>
             </a>
             
-            
-            <!-- <a class="works-item" href="works-5.html">
-              <div class="works-img"><img src="img/works/xd.png" alt="AdobeXD" /></div>
-              <p class="works-name">ITスクールのLP</p>
-              <p class="works-info">AdobeXD</p>
-            </a>
-            <a class="works-item" href="works-6.html">
-              <div class="works-img"><img src="img/works/wordpress2.png" alt="WordPress2" /></div>
-              <p class="works-name">大学のHP</p>
+            <!-- 大学のHP -->
+            <a class="works-item" href="works-5.html">
+              <div class="works-img">
+                <img src="img/works/wordpress2.png" alt="作品5。大学のホームページ。" width="400" height="300">
+              </div>
+              <p class="works-name" data-ja="大学のホームページ" data-en="university website">大学のホームページ</p>
               <p class="works-info">WordPress/PHP</p>
-            </a> -->
-            
+            </a>
           </div>
         </div>
       </section>
-      <!-- works -->
+      <!-- /works -->
       
-      <!-- skill -->
-      <section class="skill section" id="skill">
+      <!-- skills -->
+      <section class="skills section" id="skills">
         <div class="container">
-          <h2 class="title">SKILL</h2>
-          <div class="skill-list">
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/html.png" alt="html"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">HTML/CSS</h3>
-                <p class="skill-text">
+          <h2 class="title">skills</h2>
+          <div class="skills-list">
+            <div class="skills-item">
+              <p class="skills-img"><img src="img/skills/html.png" alt="スキル1 HTML CSS" width="150" height="150"></p>
+              <div class="skills-body">
+                <h3 class="skills-name">HTML/CSS</h3>
+                <p class="skills-text" data-ja="スマホで見ても表示崩れのないレスポンシブ対応も可能です。" data-en="Responsive design that looks great on smartphones and tablets.">
                   スマホで見ても表示崩れのないレスポンシブ対応も可能です。</p>
               </div>
             </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/wordpress.png" alt="wordpress"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">WordPress</h3>
-                <p class="skill-text">
+            <div class="skills-item">
+              <p class="skills-img"><img src="img/skills/wordpress.png" alt="スキル2 wordpress" width="150" height="150"></p>
+              <div class="skills-body">
+                <h3 class="skills-name">WordPress</h3>
+                <p class="skills-text"  data-ja="WordPress製の店舗HP・企業HP・メディアサイトなど、Webサイトを0から構築することが可能です。" data-en="I can build WordPress-based websites from scratch:store sites, corporate sites, media sites, and more.">
                   WordPress製の店舗HP・企業HP・メディアサイトなど、Webサイトを0から構築することが可能です。</p>
               </div>
             </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/js.png" alt="javascript"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">JavaScript</h3>
-                <p class="skill-text">
+            <div class="skills-item">
+              <p class="skills-img"><img src="img/skills/js.png" alt="スキル3 javascript" width="150" height="150"></p>
+              <div class="skills-body">
+                <h3 class="skills-name">JavaScript</h3>
+                <p class="skills-text" data-ja="お問い合わせフォームや自動スクロールなど動きのあるWebサイトを作る事が可能です。" data-en=" I can create dynamic websites with features like contact forms and auto-scrolling.">
                   お問い合わせフォームや自動スクロールなど動きのあるWebサイトを作る事が可能です。</p>
               </div>
             </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/photoshop.png" alt="photoshop"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Adobe Photoshop</h3>
-                <p class="skill-text">
+            <div class="skills-item">
+              <p class="skills-img"><img src="img/skills/photoshop.png" alt="スキル4 photoshop" width="150" height="150"></p>
+              <div class="skills-body">
+                <h3 class="skills-name">Adobe Photoshop</h3>
+                <p class="skills-text" data-ja="Webサイトに必要不可欠なクリエイティブバナーを作ることが可能です。" data-en="I can design creative banners that are essential for any website.">
                   Webサイトに必要不可欠なクリエイティブバナーを作ることが可能です。</p>
               </div>
             </div>
-            <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/jquery.png" alt="jquery"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">jQuery</h3>
-                <p class="skill-text">
+            <div class="skills-item">
+              <p class="skills-img"><img src="img/skills/jquery.png" alt="スキル5 jquery" width="150" height="150"></p>
+              <div class="skills-body">
+                <h3 class="skills-name">jQuery</h3>
+                <p class="skills-text" data-ja="Webサイトにフェードイン・フェードアウトなどリッチな動きをつけることが可能です。" data-en=" I can add smooth effects like fade-in and fade-out animations to your website.">
                   Webサイトにフェードイン・フェードアウトなどリッチな動きをつけることが可能です。</p>
               </div>
-            </div>
-            <!-- <div class="skill-item">
-              <p class="skill-img"><img src="img/skills/xd.png" alt="adobexd"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Adobe XD</h3>
-                <p class="skill-text">
-                  Webサイトのデザインやワイヤーフレームを作ることが可能です。</p>
-              </div> -->
             </div>
           </div>
         </div>
       </section>
-      <!-- /skill -->
-
+      <!-- /skills -->
+                
       <!-- about -->
-      <section class="about section" id="about">
-        <div class="container">
-          <h2 class="title">ABOUT</h2>
-          <div class="profile">
-            <p class="profile-img">
-              <img src="img/profile-illust.jpg" alt="about">
-            </p>
-            <div class="profile-body">
-              <h4 class="about-name">Tsuru</h4>
-              <p>大阪在住。フリーランスとしてコーディングやバナー制作などをしております。
-                <br>HTMLのコーディング、PhotoshopやCanvaを使用したバナー等の作成が得意分野です。低予算でWebサイトやバナーをお作りしますので、お気軽にお問い合わせください。
-              </p>
-
-              <h4 class="about-title">〜 経歴 〜</h4>
-              <p class="experience">
-              2007年に短大を卒業後は事務職をしておりましたが、接客がしたいと古着屋に転職し、販売員として勤務。
-              <br>2012年にECサイト運営やWEB関連の仕事に興味を持ち、社会人スクールにてサイト運営やデッサンを学ぶ。
-              その後も人と直接関わりが持てる接客業は続けたいと、服飾雑貨店、ホテル等で接客業に従事。
-              <br>2024年より家族の介護のために企業勤めが難しくなったことをきっかけに在宅ワーカーとなり、Web制作を本業にしました。
-            </p>
-            <h4 class="about-title">〜 趣味 〜</h4>
-            <ul class="hobby">
-              <li>音楽 : ジャンル問わずに色々聞くが、特にROCKやEDMなど洋楽が好き。ライブや夏フェスによく1人参戦。</li>
-              <li>旅行 : 泊まりはもちろん、近場への日帰り観光も好き。景色の写真を撮ったり、現地の食事を味わうのが楽しみ。人吉で1人で酒蔵巡りするほどお酒も好き。</li>
-              <li>DIY : ものづくりが好きで自室の時計やカレンダーなども自身で作成。</li>
-              <li>資格勉強 : 学生時代に必須う科目で日商簿記や英検などを受験し、合格した際の達成感が好き。社会人になってからも国際会計の資格を取得。現在は英語と韓国語を勉強中。</li>
-            </ul>
-              
+      <section class="about section" id="about" >
+        <h2 class="title">about</h2>
+        <div class="container about-container">
+          
+          <div class="profile-left">
+            <!-- プロフィール詳細へのリンクボタン PC用-->
+            <div class="profile-details">
+              <a href="profile.html" class="pc-btn">
+                <p class="btn-main" data-ja="プロフィール<br>詳細はこちらを" data-en="profile<br>details">プロフィール<br>詳細はこちらを</p>
+                <p class="btn-text">click</p>
+                <span class="ornament-color"></span>               
+              </a>
             </div>
+            <!-- プロフィール画像 -->
+            <div  class="profile-img">
+              <img src="img/profile-illust.png" alt="プロフィール画像" width="3360" height="3199">
+            </div>
+          </div>
+          
+          <div class="profile-right">
+            <!-- 自己紹介文 -->
+            <h4 class="about-name">Tsuru</h4>
+            <p data-ja="大阪在住。フリーランスとしてコーディングやバナー制作などをしております。<br>HTMLのコーディング、PhotoshopやCanvaを使用したバナー等の作成が得意分野です。低予算でWebサイトやバナーをお作りしますので、お気軽にお問い合わせください。" data-en="Based in Osaka, I work as a freelancer specializing in coding and banner design.I'm skilled in HTML coding and creating banners using Photoshop and Canva. I offer budget-friendly websites and banners. Feel free to reach out!">
+              大阪在住。フリーランスとしてコーディングやバナー制作などをしております。
+              <br>HTMLのコーディング、PhotoshopやCanvaを使用したバナー等の作成が得意分野です。低予算でWebサイトやバナーをお作りしますので、お気軽にお問い合わせください。
+            </p>
+            <!-- プロフィール詳細へのリンク SP用-->
+            <a class="sp-btn" href="profile.html" data-ja="プロフィール詳細はこちら" data-en="See profile details">プロフィール詳細はこちら</a>
           </div>
         </div>
       </section>
       <!-- /about -->
-
+                
       <!-- contact -->
       <section class="contact section" id="contact">
         <div class="container">
-          <h2 class="title">CONTACT</h2>
-          <p class="lead">
-            お問い合わせは、<br class="sp-only">SNSにてお願いいたします。
+          <h2 class="title">contact</h2>
+          <p class="lead" class="sp-only" data-ja="お問い合わせは<br>SNSまたはメールにてお願いいたします。" data-en="For inquiries, please contact me via social media or email.">
+            お問い合わせは<br>SNSまたはメールにてお願いいたします。
           </p>
+          
           <div class="contact-list">
-            <a href="https://x.com/YTsuru_work" target="_blank">
-              <img id="x-logo" src="img/icon-x.gif" alt="X">
-            </a>
+            <div class="x-twitter">
+              <a href="https://x.com/YTsuru_work" target="_blank">
+                <img id="x-logo" src="img/icon-x.png" alt="X（旧Twitter）のリンク用ロゴ" width="2400" height="2453">
+                <p>@YTsuru_work</p>
+              </a>
+            </div>
+            
+            <div class="mail">
+              <a href="mailto:y.tsuru-work@outlook.jp?subject=お問い合わせ">
+                <img id="mail-icon" src="img/icon-mail.png" alt="メールソフト起動ボタン" width="128" height="128">
+                <p>y.tsuru-work@outlook.jp</p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
       <!-- /contact -->
       <div class="page-top" id="js-page-top">
-        <span class="material-icons-outlined">expand_less</span>
+        <span class="page-top-text" data-ja="↑<br>ページtopへ" data-en="↑<br>back to top">↑<br>ページtopへ</span>
       </div>
     </main>
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="copyright">&copy;Tsuru</div>
-    </footer>
-    <!-- /footer -->
-
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type='text/javascript' src="js/script.js"></script>
+              
+  <!-- footer -->
+  <footer class="footer">
+    <div class="copyright">&copy;Tsuru</div>
+  </footer>
+  <!-- /footer -->
+  
+  
 </body>
 </html>

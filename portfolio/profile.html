@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsuru's portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/profile.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Yusei+Magic&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer type='text/javascript' src="js/script.js"></script>
+  <script defer src="https://kit.fontawesome.com/4dbc92b9fb.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="index.html">Tsuru's portfolio</a>
+        </h1>
+        <div class="nav">
+          <!-- PC用ナビゲーション -->
+          <nav class="nav-pc">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="index.html#works">works</a></li>
+              <li class="nav-item"><a href="index.html#skill">skill</a></li>
+              <li class="nav-item"><a href="index.html#about">about</a></li>
+              <li class="nav-item"><a href="index.html#contact">contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- PC用言語切り替え -->
+          <div class="lang-switcher lang-switcher-pc">
+            <button id="lang-ja">japanese</button>
+            <button id="lang-en">english</button>
+          </div>
+          
+          <!-- ハンバーガーメニュー -->
+          <div class="hamburger" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+          
+        <!-- SP用ナビゲーション -->
+        <nav class="nav-sp" id="js-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">home</a></li>
+            <li class="nav-item"><a href="index.html#works">works</a></li>
+            <li class="nav-item"><a href="index.html#skill">skill</a></li>
+            <li class="nav-item"><a href="index.html#about">about</a></li>
+            <li class="nav-item"><a href="index.html#contact">contact</a></li>
+          </ul>
+
+          <!-- SP用言語切り替え -->
+          <div class="lang-switcher lang-switcher-sp">
+            <button id="lang-ja-sp">japanese</button>
+            <button id="lang-en-sp">english</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+    
+    <main class="content">
+      <section class="profile">
+        <div class="profile-body">
+          <!-- 経歴 -->
+          <h4 class="about-title" data-ja="- 経歴 -" data-en="- career -">- 経歴 -</h4>
+          <div class="career">
+            <h5 data-ja="2007年" data-en="2007">2007年</h5>
+            <p data-ja="短大の英米語学科を卒業。事務職をしていたが、接客業に魅力を感じ、古着屋の販売員へ転職。" data-en="Graduated from the English and American Literature Department of a junior college. Initially worked in an administrative role but was drawn to customer service and transitioned to a sales position at a vintage clothing store.">
+              短大の英米語学科を卒業。事務職をしていたが、接客業に魅力を感じ、古着屋の販売員へ転職。
+            </p>
+            <h5 data-ja="2012年" data-en="2012">2012年</h5>
+            <p data-ja="販売員として勤務する中で個人バイヤーの方との交流をきっかけにECサイト運営やWEB関連の仕事に興味を持ち、社会人スクールにて半年間、ECサイト運営やデッサンを学ぶ。
+            <br>スクール修了後は、期間限定のWEB促進事業所でWEBサイト制作の営業に従事。
+            <br>事業解体後も人と直接関わりが持てる仕事は続けたいという思いから、ECサイトを持つ服飾雑貨店やビジネスホテル等で接客業に従事。" 
+            data-en="While working as a salesperson, interactions with individual buyers sparked an interest in EC site management and web-related work. I attended a school for six months to study EC site operation and drawing.
+            <br>After completing the program, I engaged in sales for web design at a temporary web promotion project.
+            <br>Following the project's dissolution, wanting to continue work involving direct interaction with people, I worked in customer service at apparel and home goods store with EC sites and business hotels.">
+            販売員として勤務する中で個人バイヤーの方との交流をきっかけにECサイト運営やWEB関連の仕事に興味を持ち、社会人スクールにて半年間、ECサイト運営やデッサンを学ぶ。
+            <br>スクール修了後は、期間限定のWEB促進事業所でWEBサイト制作の営業に従事。
+            <br>事業解体後も人と直接関わりが持てる仕事は続けたいという思いから、ECサイトを持つ服飾雑貨店やビジネスホテル等で接客業に従事。
+            </p>
+            <h5 data-ja="2024年" data-en="2024">2024年</h5>
+            <p data-ja="家族の介護により企業勤めが難しくなったことをきっかけに、在宅ワーカーになることを決意。
+            <br>将来は自身でECサイトを作って運営したい、販売員時代に携わってきたVMDの知識もデザインに活かしたいという思いから、本格的にWEBデザインを学習。WEB制作を本業にし、在宅ワーカーへ転身。" 
+            data-en="Decided to become a remote worker due to the difficulty of corporate employment while caring for family.
+            <br>With a future goal of creating and managing my own EC site and a desire to apply my VMD knowledge from my sales experience to design, I began to seriously study web design. I transitioned to becoming a professional web designer and remote worker.">
+            家族の介護により企業勤めが難しくなったことをきっかけに、在宅ワーカーになることを決意。
+            <br>将来は自身でECサイトを作って運営したい、販売員時代に携わってきたVMDの知識もデザインに活かしたいという思いから、本格的にWEBデザインを学習。WEB制作を本業にし、在宅ワーカーへ転身。
+            </p>
+          </div>
+      
+          <!-- 趣味 -->
+          <h4 class="about-title" data-ja="- 趣味 -" data-en="- hobby -">- 趣味 -</h4>
+          <div class="hobby">
+            <div class="hobby-left">
+              <!-- 音楽 -->
+              <div class="hobby-detail hobby-music">
+                <h5 data-ja="【音楽】" data-en="【music】">【音楽】</h5>
+                <p data-ja="" 
+                data-en="I listen to all genres of music, but I especially like Western music such as ROCK and EDM. I also go to festivals and solo concert several times a year.">
+                あらゆるジャンルの音楽を聞きますが、特にROCKやEDMなどの洋楽が好き。フェスなどライブにも年に数回は行っています。
+              </p>
+            </div>
+            
+            <!-- 旅行 -->
+            <div class="hobby-detail hobby-travel">
+              <h5 data-ja="【旅行】" data-en="【travel】">【旅行】</h5>
+              <p data-ja="泊まりはもちろん、近場への日帰り観光も好きで景色の写真を撮ったり、現地の食事を味わうのが楽しみの一つです。熊本県の人吉市まで行き、1人で酒蔵巡りするほどお酒も好きです。" data-en="I enjoy both overnight trips and day trips to nearby areas. One of my pleasures is taking photos of scenery and savoring local cuisine. I also enjoy sake, so much so that I've traveled alone to Hitoyoshi City in Kumamoto Prefecture for brewery tours.">
+                泊まりはもちろん、近場への日帰り観光も好きで景色の写真を撮ったり、現地の食事を味わうのが楽しみの一つです。熊本県の人吉市まで行き、1人で酒蔵巡りするほどお酒も好きです。
+              </p>
+            </div>
+            
+            <!-- DIY -->
+            <div class="hobby-detail hobby-diy">
+              <h5>【DIY】</h5>  
+              <p data-ja="ものづくりやインテリアが好きで自室の時計やカレンダーなど理想のものが見つからなければ自身で作成しています。" data-en="I enjoy crafting and interior design. If I can't find the ideal clock or calendar for my room, I create them myself.">
+                ものづくりやインテリアが好きで自室の時計やカレンダーなど理想のものが見つからなければ自身で作成しています。
+              </p>
+            </div>
+            
+            <!-- 資格勉強 -->
+            <div class="hobby-detail hobby-study">
+              <h5 data-ja="【資格勉強】" data-en="【studying for qualifications】">【資格勉強】</h5>
+              <p data-ja="学生時代に簿記や英検など複数の資格試験を受験し、合格した際の達成感を多数味わったことをきっかけに卒業後も英文会計・韓国語・漢検などを独学で学び初級程度の資格を取得。<br>現在は英語、韓国語を再度勉強中。WEBデザインについてはもちろん、国際会計・イタリア語など学びたいことが尽きない今日この頃です。" data-en="Experiencing a sense of accomplishment after passing multiple qualification exams such as bookkeeping and Eiken during my student years motivated me to continue learning independently after graduation, acquiring beginner-level certifications in English accounting, Korean, and Kanji.<br>Currently, I am restudying English and Korean. In addition to web design, I have an insatiable desire to learn about international accounting, Italian, and more.">
+                学生時代に簿記や英検など複数の資格試験を受験し、合格した際の達成感を多数味わったことをきっかけに卒業後も英文会計・韓国語・漢検などを独学で学び初級程度の資格を取得。
+                <br>現在は英語、韓国語を再度勉強中。WEBデザインについてはもちろん、国際会計・イタリア語など学びたいことが尽きない今日この頃です。
+              </p>
+            </div>
+          </div>
+        
+          <!-- スライドショー -->
+          <div class="hobby-right">
+            <div class="slide-show">
+              <a href="img/about/Osaka-jo.png" data-lightbox="group" class="slide-item slide-item-1" data-title="春の大阪城。春は梅や桜だけではなく、花壇に咲く花もとても綺麗です。" data-ja-title="春の大阪城。春は梅や桜だけではなく、花壇に咲く花もとても綺麗です。"
+              data-en-title="Osaka Castle in spring. It's not just famous as plum and cherry blossoms, but also the flower beds are beautiful.">
+              <img src="img/about/Osaka-jo.png" alt="大阪城公園の写真" width="3024" height="2933">
+            </a>
+            <a href="img/about/Hitoyoshi.png" data-lightbox="group" class="slide-item slide-item-2" data-title="繊月酒造にて酒蔵見学。製造しているところを見学し、焼酎を飲み比べしてたくさん購入。その後、人吉城跡を散策。大好きな米焼酎の蔵へ行けて、良い景色も見れて大満足な一人旅でした。" data-ja-title="繊月酒造にて酒蔵見学。製造しているところを見学し、焼酎を飲み比べしてたくさん購入。その後、人吉城跡を散策。大好きな米焼酎の蔵へ行けて、良い景色も見れて大満足な一人旅でした。" data-en-title="I traveled to Hitoyoshi City, Kumamoto Prefecture, which is famous for its rice shochu. Had a wonderful solo trip that included a tour of Sengetsu Shuzo brewery. It was fascinating to see how they make shochu, and I happily sampled and purchased several varieties. Later, I enjoyed a walk around the Hitoyoshi Castle ruins. Visiting my beloved rice shochu brewery and taking in the lovely views made this trip truly fulfilling">
+              <img src="img/about/Hitoyoshi.png" alt="人吉市の観光写真" width="3072" height="4096">
+            </a>
+            <a href="img/about/clock.png" data-lightbox="group" class="slide-item slide-item-3" data-title="部屋に合ったデザインと大きさの時計が売っていなかったので自作。針の部分はネットで、数字のブロックはIKEAで、その他はすべて100均で購入して作りました。" data-ja-title="部屋に合ったデザインと大きさの時計が売っていなかったので自作。針の部分はネットで、数字のブロックはIKEAで、その他はすべて100均で購入して作りました。" data-en-title="I couldn't find a clock of the perfect size and design for my room, so I made one myself. The clock hands were from an online shop, the number blocks were from IKEA, and all the other parts were purchased at a 100-yen store.">
+              <img src="img/about/clock.png" alt="自作の時計" width="2830" height="3359">
+            </a>
+            <a href="img/about/calendar.png" data-lightbox="group" class="slide-item slide-item-4" data-title="壁に直張りした大きなカレンダー。壁紙が剥がれないようにマスキングテープで枠を作って毎月数字を貼り直しています。写真を撮った当時は3つの仕事を掛け持ちしていたので、分かりやすいように予定を付箋とマスキングテープで色分けして貼り付けていました。" data-ja-title="壁に直張りした大きなカレンダー。壁紙が剥がれないようにマスキングテープで枠を作って毎月数字を貼り直しています。写真を撮った当時は3つの仕事を掛け持ちしていたので、分かりやすいように予定を付箋とマスキングテープで色分けして貼り付けていました。" data-en-title="This is a large calendar I've directly adhered to the wall. To protect the wallpaper, I made a frame with masking tape and update the numbers monthly. Back when this photo was taken, I was working three jobs simultaneously, so I color-coded my appointments with sticky notes and masking tape for easy understanding.">
+              <img src="img/about/calendar.png" alt="自作のカレンダー" width="2448" height="3264">
+            </a>
+          </div>
+          
+          <div class="slide-nav">
+            <span style="float:left" class="ss-icon" id="prev">&lt;<p>prev</p></span>
+            <span style="float:right" class="ss-icon" id="next"><p>next</p>&gt;</span>
+          </div>
+          
+          <div class="hobby-note">
+            <p data-ja="※ 画像をクリックすると拡大できます。" data-en="※ Click on the image to enlarge it.">
+              ※ 画像をクリックすると拡大できます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-top" id="js-page-top">
+        <span class="page-top-text" data-ja="↑<br>ページtopへ" data-en="↑<br>back to top">↑<br>ページtopへ</span>
+      </div>
+    </main>
+  </div>
+    
+  <!-- footer -->
+  <footer class="footer">
+    <div class="copyright">&copy;Tsuru</div>
+  </footer>
+  <!-- /footer -->
+    
+</body>
+</html>
