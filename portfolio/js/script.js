@@ -93,7 +93,6 @@ $(function () {
   
   // 言語切り替え機能
   function switchLanguage(lang) {
-    console.log('Switching language to:', lang); // デバッグ用ログ
     
     // テキストの切り替え
     $('[data-ja][data-en]').each(function () {
@@ -122,7 +121,6 @@ $(function () {
     function updateMainVisualImage(lang) {
       const mvImg = document.getElementById('mv-lang');
       if (!mvImg) {
-        console.log('Main visual image element not found'); // デバッグ用ログ
         return;
       }
     
@@ -147,13 +145,11 @@ $(function () {
 
   // ボタンクリックで切り替え
   $(document).on('click', '#lang-ja, #lang-ja-sp', function(e) {
-    console.log('Japanese button clicked'); // デバッグ用ログ
     e.preventDefault();
     switchLanguage('ja');
   });
 
   $(document).on('click', '#lang-en, #lang-en-sp', function(e) {
-    console.log('English button clicked'); // デバッグ用ログ
     e.preventDefault();
     switchLanguage('en');
   });
@@ -161,7 +157,6 @@ $(function () {
   // ページ読み込み時に保存言語を適用
   $(document).ready(function() {
     const savedLang = localStorage.getItem('lang') || 'ja';
-    console.log('Initial language:', savedLang); // デバッグ用ログ
     switchLanguage(savedLang);
   });
   
